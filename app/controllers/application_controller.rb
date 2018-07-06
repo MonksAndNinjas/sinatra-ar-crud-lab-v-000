@@ -42,7 +42,9 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
-    params.to_s
+    @post = Post.find(params[:id])
+    @post.name = params[:name]
+    @post.content = params[:content]
 
   end
 end
