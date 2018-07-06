@@ -51,7 +51,7 @@ class ApplicationController < Sinatra::Base
   end
 
   delete '/posts/:id/delete' do
-    
+    @posts = Post.all
 
     erb :index
   end
