@@ -42,7 +42,7 @@ class ApplicationController < Sinatra::Base
   end
 
   patch '/posts/:id' do
-    @post = params[:id]
-    erb :show
+    params.to_s
+
   end
 end
