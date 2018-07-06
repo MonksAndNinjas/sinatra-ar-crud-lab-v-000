@@ -1,4 +1,4 @@
-<% @posts.each do |post| %>
+<% @posts.each.with_index do |post| %>
   <h1>Name: <%= post.name %></h1>
 
   <p>Content: <%= post.content %></p>
