@@ -25,8 +25,6 @@ class ApplicationController < Sinatra::Base
   post '/posts' do
     Post.create(title: params[:title], content: params[:content])
 
-
-
     erb :index
   end
 end
