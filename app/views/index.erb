@@ -1,6 +1,6 @@
 <h1>All Posts!</h1>
 
-<% @posts.each do |post| %>
+<% @posts.each.with_index(1) do |post| %>
   <h2>Post: <%= post.name %></h2>
 
   <p>Content: <br><%= post.content %></p>
