@@ -1,9 +1,11 @@
 <form action="/posts/<%= @post.id %>" method="POST">
-  <label for="name">Name: </label>
-  <input id="hidden" type="hidden" name="_method" value="patch">
-  <input type="text" name="name">
 
   <label for="name">Name: </label>
   <input id="hidden" type="hidden" name="_method" value="patch">
   <input type="text" name="name">
+
+  <label for="content">Content: </label>
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  <input type="text" name="name">
+
 </form>
